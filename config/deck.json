@@ -1,0 +1,134 @@
+{
+  "pages": [
+    {
+      "id": "page_main",
+      "name": "Utama",
+      "buttons": [
+        {
+          "id": "btn_yt",
+          "label": "YouTube",
+          "icon": "🎬",
+          "color": "#e11d48",
+          "action": { "type": "open_url", "value": "https://youtube.com" }
+        },
+        {
+          "id": "btn_google",
+          "label": "Google",
+          "icon": "🔍",
+          "color": "#2563eb",
+          "action": { "type": "open_url", "value": "https://google.com" }
+        },
+        {
+          "id": "btn_term",
+          "label": "Terminal",
+          "icon": "💻",
+          "color": "#475569",
+          "action": { "type": "open_app", "value": "x-terminal-emulator || konsole || gnome-terminal" }
+        },
+        {
+          "id": "btn_files",
+          "label": "File Manager",
+          "icon": "📁",
+          "color": "#d97706",
+          "action": { "type": "open_app", "value": "xdg-open ~" }
+        },
+        {
+          "id": "btn_lock",
+          "label": "Lock Screen",
+          "icon": "🔒",
+          "color": "#7c3aed",
+          "action": { "type": "command", "value": "loginctl lock-session" }
+        },
+        {
+          "id": "btn_editor",
+          "label": "VS Code",
+          "icon": "📝",
+          "color": "#0891b2",
+          "action": { "type": "open_app", "value": "code" }
+        }
+      ]
+    },
+    {
+      "id": "page_media",
+      "name": "Media",
+      "buttons": [
+        {
+          "id": "btn_volup",
+          "label": "Volume +",
+          "icon": "🔊",
+          "color": "#16a34a",
+          "action": { "type": "command", "value": "pactl set-sink-volume @DEFAULT_SINK@ +5%" }
+        },
+        {
+          "id": "btn_voldown",
+          "label": "Volume -",
+          "icon": "🔉",
+          "color": "#65a30d",
+          "action": { "type": "command", "value": "pactl set-sink-volume @DEFAULT_SINK@ -5%" }
+        },
+        {
+          "id": "btn_mute",
+          "label": "Mute",
+          "icon": "🔇",
+          "color": "#dc2626",
+          "action": { "type": "command", "value": "pactl set-sink-mute @DEFAULT_SINK@ toggle" }
+        },
+        {
+          "id": "btn_playpause",
+          "label": "Play/Pause",
+          "icon": "⏯️",
+          "color": "#0f172a",
+          "action": { "type": "command", "value": "playerctl play-pause" }
+        },
+        {
+          "id": "btn_next",
+          "label": "Next Track",
+          "icon": "⏭️",
+          "color": "#334155",
+          "action": { "type": "command", "value": "playerctl next" }
+        },
+        {
+          "id": "btn_prev",
+          "label": "Prev Track",
+          "icon": "⏮️",
+          "color": "#334155",
+          "action": { "type": "command", "value": "playerctl previous" }
+        }
+      ]
+    },
+    {
+      "id": "page_power",
+      "name": "Power",
+      "buttons": [
+        {
+          "id": "btn_sleep",
+          "label": "Sleep",
+          "icon": "😴",
+          "color": "#6366f1",
+          "action": { "type": "command", "value": "systemctl suspend" }
+        },
+        {
+          "id": "btn_reboot",
+          "label": "Reboot",
+          "icon": "🔄",
+          "color": "#f59e0b",
+          "action": { "type": "command", "value": "systemctl reboot" }
+        },
+        {
+          "id": "btn_shutdown",
+          "label": "Shutdown",
+          "icon": "⏻",
+          "color": "#ef4444",
+          "action": { "type": "command", "value": "systemctl poweroff" }
+        },
+        {
+          "id": "btn_screenshot",
+          "label": "Screenshot",
+          "icon": "📸",
+          "color": "#0891b2",
+          "action": { "type": "command", "value": "spectacle -r -b -n -o ~/Pictures/shot-$(date +%s).png" }
+        }
+      ]
+    }
+  ]
+}

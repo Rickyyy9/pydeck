@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0f172a">
+  <title>PyDeck</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">⬛</span>
+      <span class="title">PyDeck</span>
+    </div>
+    <div class="status" id="status">
+      <span class="dot" id="statusDot"></span>
+      <span id="statusText">Terhubung</span>
+    </div>
+  </header>
+
+  <!-- Tab halaman -->
+  <nav class="tabs" id="tabs"></nav>
+
+  <!-- Grid tombol -->
+  <main class="grid" id="grid"></main>
+
+  <!-- Toast notifikasi -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Tombol editor -->
+  <button class="fab" id="editBtn" title="Mode Edit">✏️</button>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
